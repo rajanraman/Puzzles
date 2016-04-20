@@ -1,0 +1,12 @@
+def sherlock_beast():
+	t = int(input().strip())
+	for a0 in range(t):
+		n = int(input().strip())
+		temp = n
+		while n%3 != 0:
+			n -= 5
+			pass
+		if n < 0:
+			print(-1)
+		else:
+			print('5' * n + '3' * (temp-n))
